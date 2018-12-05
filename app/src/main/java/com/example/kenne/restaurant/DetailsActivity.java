@@ -32,7 +32,7 @@ public class DetailsActivity extends AppCompatActivity {
         priceView.setText(String.valueOf(price));
 
         ImageView image_view = findViewById(R.id.imageView2);
-        Picasso.get().load(img).centerCrop().resize(500, 500).into(image_view);
+        Picasso.get().load(img).centerCrop().resize(800, 500).into(image_view);
 
 
 

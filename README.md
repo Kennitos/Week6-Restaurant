@@ -8,5 +8,5 @@ pagina waarop de details van het gerecht worden getoond.
 <p float="left">
 <img src="https://github.com/Kennitos/Week6-Restaurant/blob/master/screenshots/restau1.png" width="275" height="490">
 <img src="https://github.com/Kennitos/Week6-Restaurant/blob/master/screenshots/restau2.png" width="275" height="490">
-<img src="https://github.com/Kennitos/Week6-Restaurant/blob/master/screenshots/restau3.png" width="275" height="490">
+<img src="https://github.com/Kennitos/Week6-Restaurant/blob/master/screenshots/restarant.gif" width="275" height="490">
 </p>

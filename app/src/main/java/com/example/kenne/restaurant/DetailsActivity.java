@@ -29,7 +29,8 @@ public class DetailsActivity extends AppCompatActivity {
 
         nameView.setText(name);
         descriptionView.setText(description);
-        priceView.setText(String.valueOf(price));
+        String euro = "€ "+String.valueOf(price);
+        priceView.setText(euro);
 
         ImageView image_view = findViewById(R.id.imageView2);
         Picasso.get().load(img).centerCrop().resize(800, 500).into(image_view);

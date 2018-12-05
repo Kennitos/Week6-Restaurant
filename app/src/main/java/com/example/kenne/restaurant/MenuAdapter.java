@@ -38,7 +38,8 @@ public class MenuAdapter extends ArrayAdapter<MenuItem> {
         name_view.setText(name);
 
         TextView price_view = convertView.findViewById(R.id.priceView);
-        price_view.setText(String.valueOf(price));
+        String euro = "€ "+String.valueOf(price);
+        price_view.setText(euro);
 
         ImageView image_view = convertView.findViewById(R.id.imageView);
         Log.d("testjson",img);

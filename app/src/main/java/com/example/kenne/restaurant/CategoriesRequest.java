@@ -38,33 +38,6 @@ public class CategoriesRequest implements Response.Listener<JSONObject>, Respons
 
     }
 
-//    @Override
-//    public void onResponse(JSONObject response) {
-//        JSONObject jsonObj = null;
-//        JSONArray values;
-//        ArrayList categories = new ArrayList();
-//        ArrayList names = new ArrayList();
-//        try {
-//            jsonObj = new JSONObject((response.toString()));
-//            JSONArray itemsArray = response.getJSONArray("items");
-//            for (int i = 0; i < itemsArray.length(); i++) {
-//                JSONObject chooseObject = itemsArray.getJSONObject(i);
-//                int id = chooseObject.getInt("id");
-//                String cate = chooseObject.getString("category");
-//
-//                String description = chooseObject.getString("description");
-//                double price = chooseObject.getDouble("price");
-//                String img = chooseObject.getString("image_url");
-//                String name = chooseObject.getString("name");
-//
-//                Log.d("testjson", ' ' + name + ' ' + cate + ' ' + id + ' ' + price + ' ' + img + ' ' + description);
-//
-//            }
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-////        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.id.listview,categories);
-//        }
-//    }
 
     @Override
     public void onResponse(JSONObject response) {
@@ -85,7 +58,6 @@ public class CategoriesRequest implements Response.Listener<JSONObject>, Respons
             activity.gotCategories(categories);
         } catch (JSONException e) {
             e.printStackTrace();
-//        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.id.listview,categories);
         }
 
 

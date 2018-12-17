@@ -1,7 +1,6 @@
 package com.example.kenne.restaurant;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -39,9 +38,6 @@ public class MenuRequest implements Response.Listener<JSONObject>, Response.Erro
     @Override
     public void onResponse(JSONObject response) {
         JSONObject jsonObj = null;
-        JSONArray values;
-        ArrayList categories = new ArrayList();
-        ArrayList names = new ArrayList();
         ArrayList<MenuItem> MenuItems = new ArrayList<>();
         try {
             jsonObj = new JSONObject((response.toString()));
@@ -59,15 +55,11 @@ public class MenuRequest implements Response.Listener<JSONObject>, Response.Erro
                 MenuItem newMenu = new MenuItem(name, description, img, price, cate);
                 MenuItems.add(newMenu);
 
-
-//                MenuItems.add(cate+description+price+img+name);
-//                Log.d("testjson", ' ' + name + ' ' + cate + ' ' + id + ' ' + price + ' ' + img + ' ' + description);
-                Log.d("testjson4", newMenu.getName());
             }
             activity.gotMenu(MenuItems);
         } catch (JSONException e) {
             e.printStackTrace();
-//        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.id.listview,categories);
+
         }
 
     }
